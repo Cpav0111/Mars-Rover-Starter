@@ -36,8 +36,8 @@ describe("Rover class", function() {
     expect((response.results)[1].completed).toBe(true);
     expect((response.results)[1].roverStatus.mode).toBe('LOW_POWER');
     expect((response.results)[1].roverStatus.generatorWatts).toBe(110);
-    expect((response.results)[1].roverStatus.position).toBe(98382);
-  });//1 index of status check array
+    expect((response.results)[1].roverStatus.position).toBe(98382); 
+  });//1 index of status check in array
 
   it("responds correctly to the mode change command", function() {
     expect((response.results)[0].completed).toBe(true);
